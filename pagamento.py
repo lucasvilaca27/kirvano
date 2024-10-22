@@ -27,8 +27,8 @@ def webhook():
     logging.info(f'Recebido dados: {data}')  # Log dos dados recebidos
     
     # Aqui você pode processar os dados recebidos da Kirvano
-    email_comprador = data.get('email')  # Supondo que o e-mail do comprador esteja aqui
-    nome_comprador = data.get('nome')  # Supondo que o nome do comprador esteja aqui
+    email_comprador = data.get('customer', {}).get('email')  # Acessando o e-mail do comprador
+    nome_comprador = data.get('customer', {}).get('name')  # Acessando o nome do comprador
 
     # Validação básica
     if not email_comprador or not nome_comprador:
