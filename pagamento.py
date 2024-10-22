@@ -34,7 +34,7 @@ def webhook():
 
     senha = ''
     for i in range(14):
-        semja += choice(14)
+        senha += choice(string.ascii_letters + string.digits + string.punctuation)
         
     # Validação básica
     if not email_comprador or not nome_comprador:
