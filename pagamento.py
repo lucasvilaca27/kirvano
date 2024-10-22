@@ -2,6 +2,8 @@ from flask import Flask, request, jsonify
 from flask_mail import Mail, Message
 import os
 import logging
+from random import choice
+import string
 
 app = Flask(__name__)
 
@@ -30,6 +32,10 @@ def webhook():
     email_comprador = data.get('customer', {}).get('email')  # Acessando o e-mail do comprador
     nome_comprador = data.get('customer', {}).get('name')  # Acessando o nome do comprador
 
+    senha = ''
+    for i in range(14):
+        semja += choice(14)
+        
     # Validação básica
     if not email_comprador or not nome_comprador:
         logging.warning('Dados incompletos recebidos.')  # Log de aviso
@@ -39,7 +45,7 @@ def webhook():
     try:
         msg = Message('Obrigado pela sua compra!',
                       recipients=[email_comprador])
-        msg.body = f'Olá {nome_comprador},\n\nObrigado pela sua compra! Seus detalhes foram processados com sucesso.'
+        msg.body = f'Olá {nome_comprador},\n\nObrigado pela sua compra! Seus detalhes foram processados com sucesso. \nSeus dados de acesso: \nemail: {email_comprador}\nsenha: {senha}'
         mail.send(msg)
         logging.info(f'E-mail enviado para: {email_comprador}')  # Log de sucesso
     except Exception as e:
