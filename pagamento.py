@@ -5,13 +5,17 @@ import os
 app = Flask(__name__)
 
 # Configurações do Flask-Mail
-app.config['MAIL_SERVER'] = 'smtp.gmail.com'  # Correto para smtp.gmail.com
+app.config['MAIL_SERVER'] = 'smtp.your-email-provider.com'  # Exemplo: smtp.gmail.com
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = os.environ.get('MAIL_USERNAME')  # Seu e-mail
 app.config['MAIL_PASSWORD'] = os.environ.get('MAIL_PASSWORD')  # Sua senha de aplicativo
 app.config['MAIL_DEFAULT_SENDER'] = os.environ.get('MAIL_USERNAME')  # E-mail do remetente
 mail = Mail(app)
+
+@app.route('/')
+def index():
+    return "Webhook is running!"
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
