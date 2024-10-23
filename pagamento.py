@@ -120,7 +120,28 @@ def webhook():
                                     <table width="100%" cellpadding="0" cellspacing="0" border="0">
                                       <tr>
                                         <td style="padding-right: 0px;padding-left: 0px;" align="center">
-                                          <img align="center" border="0" src="images/image-1.png" alt="" title="" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 20%;max-width: 96px;" width="96"/>
+
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="200.000000pt" height="200.000000pt" viewBox="0 0 200.000000 200.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)"
+fill="#1D5796" stroke="none">
+<path d="M0 1000 l0 -1000 1000 0 1000 0 0 1000 0 1000 -1000 0 -1000 0 0
+-1000z m1220 545 l57 -57 -96 -93 -96 -94 96 -98 c103 -105 119 -127 119 -168
+0 -40 -15 -63 -103 -152 l-81 -83 37 -38 37 -38 -88 -87 c-97 -97 -133 -113
+-190 -84 -30 14 -30 14 -84 -40 -29 -30 -65 -61 -80 -69 -35 -18 -82 -18 -116
+0 -29 16 -429 415 -456 456 -9 13 -16 42 -16 64 0 39 7 47 268 309 154 155
+281 275 301 284 47 20 86 8 143 -45 l49 -46 67 66 c77 75 83 79 136 73 31 -3
+50 -15 96 -60z m417 -297 c192 -193 203 -206 203 -241 0 -21 -6 -50 -14 -65
+-25 -47 -528 -540 -559 -547 -51 -13 -89 3 -149 62 l-57 56 37 27 c51 37 335
+336 345 363 19 51 1 78 -148 227 l-145 145 73 73 c95 98 122 114 172 108 35
+-4 58 -23 242 -208z"/>
+<path d="M712 1257 l-202 -204 0 -53 0 -53 185 -186 184 -186 113 112 112 112
+-101 104 c-146 150 -147 176 -13 308 44 44 80 83 80 87 0 4 -35 42 -78 85
+l-78 77 -202 -203z"/>
+</g>
+</svg>
                                         </td>
                                       </tr>
                                     </table>
@@ -184,8 +205,8 @@ def webhook():
                                         <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
                                           <p style="line-height: 140%;">Suas credenciais de acesso ao <strong>Sistema Forteplus</strong>:</p>
                                           <ul>
-                                            <li style="line-height: 19.6px;">Email: {email_comprador}</li>
-                                            <li style="line-height: 19.6px;">Senha: {senha}</li>
+                                            <li style="line-height: 19.6px;">Email:{email_comprador}</li>
+                                            <li style="line-height: 19.6px;">Senha:{senha}</li>
                                           </ul>
                                         </div>
                                       </td>
@@ -197,7 +218,7 @@ def webhook():
                                     <tr>
                                       <td style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;" align="left">
                                         <div align="left">
-                                          <a href="" target="_blank" class="v-button" style="box-sizing: border-box;display: inline-block;text-decoration: none;-webkit-text-size-adjust: none;text-align: center;color: #FFFFFF; background-color: #0068a5; border-radius: 4px;width:auto; max-width:100%; overflow-wrap: break-word; word-break: break-word; word-wrap:break-word; mso-border-alt: none;font-size: 14px;">
+                                          <a href="app.forteplus.com.br" target="_blank" class="v-button" style="box-sizing: border-box;display: inline-block;text-decoration: none;-webkit-text-size-adjust: none;text-align: center;color: #FFFFFF; background-color: #0068a5; border-radius: 4px;width:auto; max-width:100%; overflow-wrap: break-word; word-break: break-word; word-wrap:break-word; mso-border-alt: none;font-size: 14px;">
                                             <span style="display:block;padding:10px 20px;line-height:120%;"><span style="font-size: 14px; line-height: 16.8px;">Acessar Forteplus</span></span>
                                           </a>
                                         </div>
@@ -218,8 +239,8 @@ def webhook():
                                         <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
                                           <p style="line-height: 140%;">Suas credenciais para acesso ao mini curso na <strong>Kirvano:</strong></p>
                                           <ul>
-                                            <li style="line-height: 19.6px;">Email: {email_comprador}</li>
-                                            <li style="line-height: 19.6px;">Senha: {senha}</li>
+                                            <li style="line-height: 19.6px;">Email:{email_comprador}</li>
+                                            <li style="line-height: 19.6px;">Senha: Crie sua senha pelo email recebido</li>
                                           </ul>
                                         </div>
                                       </td>
@@ -231,7 +252,7 @@ def webhook():
                                     <tr>
                                       <td style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;" align="left">
                                         <div align="left">
-                                          <a href="" target="_blank" class="v-button" style="box-sizing: border-box;display: inline-block;text-decoration: none;-webkit-text-size-adjust: none;text-align: center;color: #FFFFFF; background-color: #161616; border-radius: 4px;width:auto; max-width:100%; overflow-wrap: break-word; word-break: break-word; word-wrap:break-word; mso-border-alt: none;font-size: 14px;">
+                                          <a href="https://app.kirvano.com/" target="_blank" class="v-button" style="box-sizing: border-box;display: inline-block;text-decoration: none;-webkit-text-size-adjust: none;text-align: center;color: #FFFFFF; background-color: #161616; border-radius: 4px;width:auto; max-width:100%; overflow-wrap: break-word; word-break: break-word; word-wrap:break-word; mso-border-alt: none;font-size: 14px;">
                                             <span style="display:block;padding:10px 20px;line-height:120%;"><span style="font-size: 14px; line-height: 16.8px;">Acessar Kirvano</span></span>
                                           </a>
                                         </div>
