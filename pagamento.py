@@ -31,6 +31,7 @@ def webhook():
     # Aqui você pode processar os dados recebidos da Kirvano
     email_comprador = data.get('customer', {}).get('email')  # Acessando o e-mail do comprador
     nome_comprador = data.get('customer', {}).get('name')  # Acessando o nome do comprador
+    offer_id = data.get('products', {}).get('offer_id')  # Acessando o nome do comprador
 
     senha = 'FP_'
     for i in range(6):
@@ -240,7 +241,7 @@ l-78 77 -202 -203z"/>
                                           <p style="line-height: 140%;">Suas credenciais para acesso ao mini curso na <strong>Kirvano:</strong></p>
                                           <ul>
                                             <li style="line-height: 19.6px;">Email:{email_comprador}</li>
-                                            <li style="line-height: 19.6px;">Senha: Crie sua senha pelo email recebido</li>
+                                            <li style="line-height: 19.6px;">Senha: Crie sua senha abaixo</li>
                                           </ul>
                                         </div>
                                       </td>
@@ -252,7 +253,7 @@ l-78 77 -202 -203z"/>
                                     <tr>
                                       <td style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;" align="left">
                                         <div align="left">
-                                          <a href="https://app.kirvano.com/" target="_blank" class="v-button" style="box-sizing: border-box;display: inline-block;text-decoration: none;-webkit-text-size-adjust: none;text-align: center;color: #FFFFFF; background-color: #161616; border-radius: 4px;width:auto; max-width:100%; overflow-wrap: break-word; word-break: break-word; word-wrap:break-word; mso-border-alt: none;font-size: 14px;">
+                                          <a href=`https://app.kirvano.com/purchases/{offer_id}` target="_blank" class="v-button" style="box-sizing: border-box;display: inline-block;text-decoration: none;-webkit-text-size-adjust: none;text-align: center;color: #FFFFFF; background-color: #161616; border-radius: 4px;width:auto; max-width:100%; overflow-wrap: break-word; word-break: break-word; word-wrap:break-word; mso-border-alt: none;font-size: 14px;">
                                             <span style="display:block;padding:10px 20px;line-height:120%;"><span style="font-size: 14px; line-height: 16.8px;">Acessar Kirvano</span></span>
                                           </a>
                                         </div>
