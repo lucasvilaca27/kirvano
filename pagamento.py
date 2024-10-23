@@ -120,7 +120,7 @@ def webhook():
                                     <table width="100%" cellpadding="0" cellspacing="0" border="0">
                                       <tr>
                                         <td style="padding-right: 0px;padding-left: 0px;" align="center">
-                                          <img align="center" border="0" src="images/image-1.png" alt="" title="" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 20%;max-width: 96px;" width="96"/>
+                                          <img align="center" border="0" src="https://pay.kirvano.com/_next/image?url=https%3A%2F%2Fs3.amazonaws.com%2Fproduction.kirvano.com%2Fproducts%2F1e48c1a8-b68e-4b13-8a63-6cf6e4812d42%2Fcover-1729261521152.png&w=48&q=75" alt="" title="" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 20%;max-width: 96px;" width="96"/>
                                         </td>
                                       </tr>
                                     </table>
