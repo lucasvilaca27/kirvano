@@ -32,9 +32,9 @@ def webhook():
     email_comprador = data.get('customer', {}).get('email')  # Acessando o e-mail do comprador
     nome_comprador = data.get('customer', {}).get('name')  # Acessando o nome do comprador
 
-    senha = ''
-    for i in range(14):
-        senha += choice(string.ascii_letters + string.digits + string.punctuation)
+    senha = 'FP_'
+    for i in range(6):
+        senha += choice(string.ascii_letters + string.digits)
         
     # Validação básica
     if not email_comprador or not nome_comprador:
