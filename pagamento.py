@@ -31,7 +31,7 @@ def webhook():
     # Aqui você pode processar os dados recebidos da Kirvano
     email_comprador = data.get('customer', {}).get('email')  # Acessando o e-mail do comprador
     nome_comprador = data.get('customer', {}).get('name')  # Acessando o nome do comprador
-    offer_id = data.get('products', {}).get('offer_id')  # Acessando o nome do comprador
+    offer_id = data.get('products', [{}])[0].get('offer_id')  # Acessando o id de oferta do primeiro produto
 
     senha = 'FP_'
     for i in range(6):
