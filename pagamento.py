@@ -124,8 +124,8 @@ def webhook():
                                             <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
                                             "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
                                             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-                                            width="200.000000pt" height="200.000000pt" viewBox="0 0 200.000000 200.000000"
-                                            preserveAspectRatio="xMidYMid meet" style="transform: rotate(0deg); fill: #1D5796;">
+                                            width="100.000000pt" height="100.000000pt" viewBox="0 0 200.000000 200.000000"
+                                            preserveAspectRatio="xMidYMid meet" style="transform: rotate(0deg); fill: #1D5796;background:#fff;">
 
                                             <g transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)"
                                             fill="#1D5796" stroke="none">
